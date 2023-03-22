@@ -39,4 +39,5 @@ try:
         print ("input0:",tmp0)
         time.sleep(0.2)
 except KeyboardInterrupt:
-    print (" Interrupted")        
+    print (" Interrupted")
+    GPIO.cleanup()        
