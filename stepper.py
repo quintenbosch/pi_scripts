@@ -3,6 +3,7 @@ import time
 
 GPIO.setmode(GPIO.BCM)
 
+#met klok mee
 def turn(pin1, pin2, pin3, pin4):
   GPIO.setup(pin1, GPIO.OUT)
   GPIO.setup(pin2, GPIO.OUT)
@@ -22,10 +23,10 @@ def turn(pin1, pin2, pin3, pin4):
   time.sleep(0.01)
   GPIO.output(pin4, 0)
 
-#for i in range(0,5):
 try:
   while True:
-    turn(7,8,25,24)
+    turn(26,16,13,12)
+    #turn(12,13,16,26)
 
 except KeyboardInterrupt:
   print(" Interrupted")
